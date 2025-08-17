@@ -1,0 +1,190 @@
+@font-face {
+    font-family: roboto;
+    src: url(./Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    --backdark-color : #1F2937;
+    --header-color: #F9FAF8;
+}
+
+nav {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+    color: var(--header-color);
+    background-color: var(--backdark-color);
+    gap: 5px;
+}
+
+nav div {
+    height: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+nav p {
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--header-color);
+    text-decoration: none;
+    height: 100%;
+    text-wrap: nowrap;
+}
+
+#container-1 {
+    padding: 5% 10%;
+    background-color: var(--backdark-color);
+    color: var(--header-color);
+    display: flex;
+    gap: 20px;
+
+    p {
+        font-size: 18px;
+        color: #E5E7EB;
+    }
+}
+
+#left, #right {
+    flex: 1;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+#left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        button {
+            width: 150px;
+        }
+}
+
+#right {
+    background-color: #e5e7eb60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#btn-1 {
+    background-color: #3882F6;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: var(--header-color);
+}
+
+#container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+
+    .illustration {
+        border: 4px solid #3882F6;
+        border-radius: 10px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .single-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+
+    p {
+        flex: 1;
+    }
+
+    #img-container {
+        display: flex;
+        gap: 50px;
+    }
+}
+
+#container-3 {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    padding: 100px;
+    
+    i {
+        font-weight: 100;
+        /* I forgot to download the light version of
+        the font, unfortunately I don't have an internet
+        connection at the time of making this, so I'll
+        leave it like this and hopefully not forget about it.
+        TODO: Also adding, I did NOT make this page dynamic yet. */
+
+    }
+
+    #quote-author {
+        text-align: end;
+        font-size: 18px;
+    }
+}
+
+#container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 100px;
+
+    #contents {
+        background-color: #3882F6;
+        display: flex;
+        width: 80%;
+        padding: 60px 100px;
+        border-radius: 10px;
+
+        #c-left {
+            flex: 2;
+        }
+
+        #c-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            button {
+                height: 50px;
+                width: 150px;
+                background-color: #3882F6;
+                border: 3px solid white;
+                border-radius: 10px;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
